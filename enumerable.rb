@@ -3,7 +3,7 @@ module Enumerable
       i = 0
     while i < self.size
       yield(self[i])
-      i+=1
+      i += 1
     end
   end
 
@@ -11,7 +11,7 @@ module Enumerable
     i = 0
     while i < self.size
       yield(self[i], i)
-      i+=1
+      i += 1
       end
   end
 
@@ -69,7 +69,7 @@ module Enumerable
     count 
   end
 
-  def my_map proc=nil
+  def my_map proc = nil
     result = []
     if proc
       self.my_each_with_index do |e, i|
